@@ -54,7 +54,7 @@
   .btn{
     display:inline-flex; align-items:center; gap:.55rem; white-space:nowrap;
     padding:.95rem 1.7rem; border-radius:999px; font-weight:600; font-size:1rem;
-    border:2px solid transparent; cursor:pointer; transition:transform .18s ease, background-color .18s ease, box-shadow .18s ease;
+     cursor:pointer; transition:transform .18s ease, background-color .18s ease, box-shadow .18s ease;
     box-shadow:var(--shadow-sm);
   }
   .btn svg{flex:0 0 auto;}
@@ -133,6 +133,15 @@
   .loc-ctas{display:flex; flex-wrap:wrap; gap:.8rem; margin-top:1.7rem;}
   .map-frame{border-radius:20px; overflow:hidden; box-shadow:var(--shadow-md); border:0; width:100%; height:clamp(320px,32vw,460px);}
 
+  /* Instagram */
+  .instagram{padding:5.5rem 0; background:var(--white);}
+  .instagram-card{display:flex; align-items:center; gap:1.8rem; flex-wrap:wrap; background:var(--pink-soft); border-radius:24px; padding:clamp(1.8rem,4vw,2.8rem);}
+  .instagram-icon{width:64px; height:64px; border-radius:18px; flex:0 0 auto; display:flex; align-items:center; justify-content:center;
+    background:linear-gradient(135deg,#FEDA77 0%,#F58529 25%,#DD2A7B 50%,#8134AF 75%,#515BD4 100%);}
+  .instagram-text{flex:1 1 320px;}
+  .btn-instagram{background:linear-gradient(135deg,#FEDA77 0%,#F58529 25%,#DD2A7B 50%,#8134AF 75%,#515BD4 100%); color:#fff; flex:0 0 auto;}
+  .btn-instagram:hover{filter:brightness(.93);}
+
   /* CTA final */
   .cta-final{position:relative; padding:5rem 1.5rem; background:var(--red); overflow:hidden; text-align:center;}
   .cta-final::before{content:'';position:absolute; inset:0;
@@ -192,6 +201,7 @@
     .footer-grid{grid-template-columns:1fr; gap:2.2rem;}
     .dif-item{grid-template-columns:48px 1fr; gap:1rem;}
     .dif-icon{width:44px; height:44px; border-radius:12px;}
+    .instagram-card{flex-direction:column; text-align:center;}
   }
   @media (max-width:420px){
     .hero-ctas .btn, .cta-final .btn{width:100%; justify-content:center;}
@@ -213,6 +223,7 @@
         <li><a href="#diferenciais">Diferenciais</a></li>
         <li><a href="#loja">Loja</a></li>
         <li><a href="#localizacao">Localização</a></li>
+        <li><a href="#instagram">Instagram</a></li>
       </ul>
     </nav>
     
@@ -355,6 +366,23 @@
     </div>
   </section>
 
+  <section class="instagram" id="instagram">
+    <div class="wrap">
+      <div class="instagram-card">
+        
+        <div class="instagram-text">
+          <span class="section-kicker">Siga a Farmáxima</span>
+          <h2 class="section-title">Acompanhe a gente no Instagram</h2>
+          <p class="section-lede">Novidades, promoções e o dia a dia da loja em <strong>@farmaxima.uniao</strong>.</p>
+        </div>
+        <a class="btn btn-instagram" href="https://www.instagram.com/farmaxima.uniao" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.7"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></svg>
+          Seguir @farmaxima.uniao
+        </a>
+      </div>
+    </div>
+  </section>
+
   <section class="cta-final">
     <div class="cta-final-inner">
       <h2>Pronto para pedir?</h2>
@@ -386,6 +414,7 @@
         <li><a href="#diferenciais">Diferenciais</a></li>
         <li><a href="#loja">Loja</a></li>
         <li><a href="#localizacao">Localização</a></li>
+        <li><a href="#instagram">Instagram</a></li>
       </ul>
     </div>
     <div>
